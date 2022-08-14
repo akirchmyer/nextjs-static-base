@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "format": "prettier --write \"./pages/**/*.+(js|ts|json)\"",
+    "format": "prettier --write \"./(pages|tests)/**/*.+(js|ts|json)\"",
     "lint": "next lint",
     "start": "next start",
     "test": "npm run lint && npm run unit",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "next": "12.2.5",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
