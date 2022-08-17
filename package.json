@@ -1,7 +1,23 @@
 {
-  "name": "nextjs-base",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-static-base",
+  "description": "Create static nextjs sites that can be uploaded to S3",
+  "version": "1.0.0",
+  "main": "out/index.html",
+  "author": "Andrew Kirchmyer",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "static",
+    "s3"
+  ],
+  "bugs": {
+    "url": "https://github.com/akirchmyer/nextjs-static-base/issues"
+  },
+  "homepage": "https://github.com/akirchmyer/nextjs-static--base",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akirchmyer/nextjs-static-base.git"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -16,10 +32,8 @@
   },
   "dependencies": {
     "next": "12.2.5",
-    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "serve": "^14.0.1",
     "storybook-base-ds": "file:../storybook-base-ds"
   },
   "devDependencies": {
@@ -30,6 +44,8 @@
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
     "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "serve": "^14.0.1",
     "ts-jest": "^28.0.7",
     "typescript": "4.7.4"
   }
