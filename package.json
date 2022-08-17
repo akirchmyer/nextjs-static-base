@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next",
     "build": "next build",
-    "dev": "next dev",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out",
     "format": "prettier --write \"./(pages|tests)/**/*.+(js|ts|json)\"",
     "lint": "next lint",
-    "start": "next start",
     "test": "npm run lint && npm run unit",
     "unit": "jest"
   },
@@ -16,6 +19,7 @@
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "serve": "^14.0.1",
     "storybook-base-ds": "file:../storybook-base-ds"
   },
   "devDependencies": {
